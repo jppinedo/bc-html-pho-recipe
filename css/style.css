@@ -1,0 +1,133 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 18px;
+  /* 
+  This image is from Pixabay and was published under the 
+  Creative Commons CC0 1.0 Universal Public Domain Dedication license 
+  https://web.archive.org/web/20161229043156/https://pixabay.com/en/service/terms/
+  */
+  background-image: url('../img/paper-pattern-black-background.jpg');
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4 {
+  color: #556b2f;
+}
+
+h1 {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+a {
+  color: #d2691e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a0522d;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 4rem auto 4rem;
+  background-color: #fff;
+  padding: 1rem 3rem 0;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  box-sizing: border-box;
+  border: 6px solid #000;
+}
+.recipe-image {
+  margin: 0;
+}
+
+.recipe-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+
+.recipe-image figcaption {
+  color: #a4a4a4;
+  font-size: 14px;
+  background-color: #f4f4f4;
+  padding: 0.5rem;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.checkmark li {
+  list-style: none;
+  position: relative;
+}
+
+.checkmark li::before {
+  /* 
+  Found this checkmark list style online, looks cool 
+  https://sharkcoder.com/blocks/list
+  */
+  content: ""; 
+  position: absolute; 
+  left: -18px; 
+  top: 5px; 
+  width: 3px;
+  height: 6px;
+  border: solid #8fbc8f;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+ol li {
+  margin-bottom: 1rem;;
+}
+
+ol li::marker {
+  color: #aaa;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 5rem;
+}
+
+footer span {
+  float: right;
+}
+
+@media only screen and (max-width: 728px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  ul, ol {
+    padding: 22px;
+  }
+  footer {
+    margin-top: 2rem;
+  }
+  footer span {
+    float: none;
+    display: block;
+  }
+}
