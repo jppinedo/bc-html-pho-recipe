@@ -12,16 +12,16 @@ body {
   Creative Commons CC0 1.0 Universal Public Domain Dedication license 
   https://web.archive.org/web/20161229043156/https://pixabay.com/en/service/terms/
   */
-  background-image: url('../img/paper-pattern-black-background.jpg');
+  background-image: url('../images/paper-pattern-black-background.jpg');
   background-attachment: fixed;
 }
 
 h1, h2, h3, h4 {
   color: #556b2f;
+  font-family: "Fredoka", sans-serif;
 }
 
 h1 {
-  font-family: "Fredoka", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 3rem;
@@ -36,6 +36,30 @@ a:hover {
   color: #a0522d;
 }
 
+/* Home page */
+.thumbnail {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.4rem;
+}
+
+.thumbnail#pho-thumbnail {
+  background-image: url('../images/pho-recipe-image.jpg');
+}
+
+@media only screen and (max-width: 500px) {
+  .thumbnail {
+    height: 250px;
+  }
+}
+
+.container#index-page {
+  max-width: 700px;
+}
+
 .container {
   max-width: 1024px;
   margin: 4rem auto 4rem;
@@ -46,6 +70,26 @@ a:hover {
   box-sizing: border-box;
   border: 6px solid #000;
 }
+
+.container input{
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  border: 1px solid #aaa;
+}
+
+.rate-recipe {
+  margin-top: 3rem;
+}
+
+.rate-recipe fieldset {
+  border: 1px solid #d7d7d7;
+  border-radius: 0.4rem;
+}
+
+.container fieldset label {
+  color: #666;
+}
+
 .recipe-image {
   margin: 0;
 }
